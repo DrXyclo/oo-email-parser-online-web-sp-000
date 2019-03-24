@@ -18,7 +18,8 @@ class EmailParser
   end
   
   def self.parse(csv_emails)
-    csv_emails.split(", ")
+    csv_emails_array = csv_emails.split(", ")
+    csv_emails_array.join
     csv_emails.split(" ") 
   end 
 
