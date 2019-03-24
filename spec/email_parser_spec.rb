@@ -4,9 +4,6 @@ describe "EmailParser" do
       expect(EmailParser.new("avi@test.com, arel@test.com").parse).to eq(["avi@test.com", "arel@test.com"])
     end
     
-      it "parses CSV emails" do
-      expect(EmailParser.new("avi@test.com, arel@test.com")).to eq(["avi@test.com", "arel@test.com"])
-    end
 
     it "parses space delimited emails" do
       expect(EmailParser.new("avi@test.com arel@test.com").parse).to eq(["avi@test.com", "arel@test.com"])
