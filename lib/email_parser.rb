@@ -17,7 +17,7 @@ class EmailParser
     self.class.parse(@csv_emails)
   end
   
-  def self.parse(csv_emails)
+  def self.parse(csv_emails) ## should use regular expression here 
     csv_emails_array = csv_emails.split(", ")
     csv_emails_string = csv_emails_array.join(" ")
     csv_emails_string.split(" ") 
