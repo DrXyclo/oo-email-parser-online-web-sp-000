@@ -20,7 +20,8 @@ class EmailParser
   def self.parse(csv_emails) ## should use regular expression here 
     csv_emails_array = csv_emails.split(", ")
     csv_emails_string = csv_emails_array.join(" ")
-    csv_emails_string.split(" ") 
+    parsed_csv_emails_array = csv_emails_string.split(" ")
+    parsed_csv_emails_array.uniq
   end 
 
 end
